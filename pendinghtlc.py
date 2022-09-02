@@ -10,10 +10,9 @@ peers = l1.listpeers()
 sumin = 0
 sumout = 0
 for peer in peers['peers']:
+    conn = "False"
     if peer['connected'] == True:
         conn = "True"
-    else:
-        conn = "False"
     for channel in peer['channels']:
         outhtlc = 0
         inhtlc = 0

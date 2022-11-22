@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from lightning import LightningRpc
+from pyln.client import LightningRpc
 import time
 
 # Here you MUST set the location of lightning-rpc socket. It should be in the lightning home dir, under bitcoin
